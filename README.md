@@ -56,6 +56,7 @@ module.exports = Hello
 |.hears|Array of Strings (or RegExp)|`['who are you$']`|
 |.example|String with a use example|`'hi, who are you?'`|
 |.description|String with a command description, helpful in the `help` command|`'This command ask to the bot who it is'`|
+|.types|String with message types separated with comma|`direct_message,direct_mention,mention`
 
 ## Contribute
 
