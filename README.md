@@ -25,27 +25,28 @@ To insert new slack commands to the chatbot you just need to create a new file l
 
 There's a default command called `help` that will list all the available commands and their description.
 
+> You can ask `who are you?` to bot and see an example communication.
+
 Example: 
 
 ```
 const Communication = require('./')
 
-class Hello extends Communication {
+class WhoAreYou extends Communication {
   constructor (...args) {
     super(args)
-    this.hears = [ '^hello$' ] // Array with string messages that will be fired, it could have a RegExp syntax
+    this.hears = [ 'who are you?$' ]
+    this.example = 'hi, who are you?'
+    this.description = 'This command ask to the bot who it is'
+    this.types = 'direct_message,direct_mention,mention'
   }
 
-  /**
-   * This method is your answer
-   */
   async answer (bot, message) {
-    // message.text is the text that someone typed to the bot
-    bot.reply(message, 'Hello human, how can I help you? :alien:')
+    bot.reply(message, ':robot_face: Hello human! I think that the right question is who are YOU? :thinking:')
   }
 }
 
-module.exports = Hello
+module.exports = WhoAreYou
 ```
 
 #### Communication Class Details
