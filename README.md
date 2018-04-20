@@ -4,7 +4,7 @@ A NodeJS Slack BOT boilerplate using [BotKit](https://github.com/howdyai/botkit)
 
 ![Slack and NodeJS logos](slack-nodejs.png)
 
-> There's no `npm install` for this, you need to clone/fork this repo and you as you want.
+> There's no `npm install` for this, you need to clone/fork this repo and use as you want.
 
 ## Docker
 
