@@ -1,0 +1,6 @@
+#!/bin/bash
+# Dev util
+
+docker-compose --file=docker/compose.dev.yml up -d
+docker exec -it slack-nodejs-bot bash
+docker-compose --file=docker/compose.dev.yml down

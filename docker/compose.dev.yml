@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  slack-nodejs-bot:
+    container_name: slack-nodejs-bot
+    build: ../
+    command: tail -f /dev/null
+    volumes:
+      - ../:/var/app
+    environment:
+      - SLACK_TOKEN=YOUR_SLACK_TOKEN
+      - DEBUG=slack-bot:*
