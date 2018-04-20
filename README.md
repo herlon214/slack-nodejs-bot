@@ -10,7 +10,7 @@ A NodeJS Slack BOT boilerplate using [BotKit](https://github.com/howdyai/botkit)
 
 This project is ready to be used with docker, there's a `Dockerfile` and you can edit as you want.
 
-If you want to enter in the container to run you can just type `./bin/run_dev` and you'll enter in the container :tada:
+If you want to enter in the container to run, just type `./bin/run_dev` and you'll enter in the container :tada:
 
 ## Environment
 
