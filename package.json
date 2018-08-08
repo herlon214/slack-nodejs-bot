@@ -9,7 +9,7 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "botkit": "^0.6.13",
+    "botkit": "^0.6.16",
     "debug": "^3.1.0"
   },
   "devDependencies": {
